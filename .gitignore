@@ -6,3 +6,5 @@
 /WebContent/
 mondrian-rest.war
 /extra-tomcat-classpath/
+.idea
+**.iml
