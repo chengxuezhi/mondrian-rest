@@ -1,19 +1,28 @@
 {
-	"test" : {
-		"JdbcDriver" : "org.hsqldb.jdbc.JDBCDriver",
-		"Jdbc" : "jdbc:hsqldb:res:test",
-		"Catalog" : "/test.xml",
-		"Description" : "Main version of test connection",
-		"UnrecognizedProperty" : "foobar",
-		"IsDemo" : true
-	},
-	"foodmart" : {
-		"JdbcDriver" : "org.hsqldb.jdbc.JDBCDriver",
-		"Jdbc" : "jdbc:hsqldb:res:foodmart;set schema \"foodmart\"",
-		"JdbcUser" : "FOODMART",
-		"JdbcPassword" : "FOODMART",
-		"Catalog" : "https://raw.githubusercontent.com/pentaho/mondrian/lagunitas/demo/FoodMart.mondrian.xml",
-		"Description" : "Pentaho/Hyde FoodMart Database",
-		"IsDemo" : true
-	}
+  "foodmart": {
+    "JdbcDriver": "org.hsqldb.jdbc.JDBCDriver",
+    "Jdbc": "jdbc:hsqldb:res:foodmart;set schema \"foodmart\"",
+    "JdbcUser": "FOODMART",
+    "JdbcPassword": "FOODMART",
+    "Catalog": "https://raw.githubusercontent.com/pentaho/mondrian/lagunitas/demo/FoodMart.mondrian.xml",
+    "Description": "Pentaho/Hyde FoodMart Database",
+    "IsDemo": true
+  },
+  "test": {
+    "JdbcDriver": "org.hsqldb.jdbc.JDBCDriver",
+    "Jdbc": "jdbc:hsqldb:res:test",
+    "Catalog": "/test.xml",
+    "Description": "Main version of test connection",
+    "UnrecognizedProperty": "foobar",
+    "IsDemo": true
+  },
+  "sale": {
+    "JdbcDriver": "com.mysql.jdbc.Driver",
+    "Jdbc": "jdbc:mysql://localhost:3306/bi_test_db",
+    "JdbcUser": "root",
+    "JdbcPassword": "123456",
+    "Catalog": "/SaleSchema.xml",
+    "Description": "Sale",
+    "IsDemo": true
+  }
 }
